@@ -1,0 +1,22 @@
+.header{
+  display: flex;
+  justify-content: center;
+  color:whitesmoke;
+  background-color: rgb(125, 125, 125);  
+}
+.container{
+ height: 100vh;  /*占滿整個視窗高度*/
+ background-color: rgb(37, 37, 37);
+}
+
+.form-header{
+  color: rgb(9, 9, 9);
+  padding: 0px;
+
+}
+
+form{
+padding: 20px 80px 50px;
+margin: 0 100px;
+background-color: aliceblue;
+}

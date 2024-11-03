@@ -1,1 +1,29 @@
-<h1>Example</h1>
+<header class="header">
+  <h1>Random Password Generator</h1>
+</header>
+
+<div class="container">   
+  <form>
+    <header>
+      <h2 class="form-header">Random Password Generator</h2>
+    </header>
+    
+
+    <label for="passwordLength">Password Length</label>
+    <input type="text" id="passwordLength" name="passwordLength"><br>
+    <div class="reminderWord">Length is available between 4~16 </div>
+
+    <label for="vehicle1"> Include Lowercase Characters</label>
+    <input type="checkbox" id="lowercase" name="lowercase" ><br>
+    <label for="vehicle2"> Include Uppercase Characters</label>
+    <input type="checkbox" id="uppercase" name="uppercase" ><br>
+    <label for="vehicle3"> Include Numbers</label>
+    <input type="checkbox" id="numbers" name="numbers" ><br>
+    <label for="vehicle2"> Include Symbols</label>
+    <input type="checkbox" id="symbols" name="symbols" ><br>
+
+    <label for="excludeCharacters">Exclude Characters</label>
+    <input type="text" id="excludeCharacters" name="excludeCharacters"><br>
+    <div class="reminderWord">These characters will not appear in the password</div>
+  </form>
+</div>
