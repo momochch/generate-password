@@ -1,3 +1,6 @@
+body {
+  font-family: 'Lato', 'Noto Sans TC', sans-serif;
+}
 .header{
   display: flex;
   justify-content: center;
@@ -9,14 +12,43 @@
  background-color: rgb(37, 37, 37);
 }
 
-.form-header{
-  color: rgb(9, 9, 9);
-  padding: 0px;
-
+h2{
+  border: none;
+    border-bottom: 1px solid #ccc;  
+    margin: 40px 0;   
 }
 
-form{
+.form-title{
+  color: rgb(9, 9, 9);
+  margin-bottom: 20px;
+}
+
+.form{
 padding: 20px 80px 50px;
-margin: 0 100px;
+margin: 100px;
 background-color: aliceblue;
+}
+
+.form-content{
+  font-size: 22px;
+  line-height:46px;
+}
+
+#reminderWord {   
+  font-size: 14px;
+  color: #888;
+  padding-bottom: 5px;
+  line-height: 1; 
+  margin-top: 0;   
+}
+
+#button {
+  margin-top:20px;
+  padding: 10px;
+  font-size: 16px; 
+  border: 1px solid #ccc; 
+  background-color: #119816;  
+  /* 鼠標懸停時顯示為手形 */
+  cursor: pointer;  
+  border-radius: 6px; 
 }
