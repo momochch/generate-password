@@ -29,17 +29,10 @@ margin: 100px;
 background-color: aliceblue;
 }
 
-.form-content{
-  font-size: 22px;
-  line-height:46px;
-}
-
 #reminderWord {   
   font-size: 14px;
   color: #888;
-  padding-bottom: 5px;
-  line-height: 1; 
-  margin-top: 0;   
+  margin-top: -15px;
 }
 
 #button {
@@ -51,4 +44,30 @@ background-color: aliceblue;
   /* 鼠標懸停時顯示為手形 */
   cursor: pointer;  
   border-radius: 6px; 
+}
+
+.form-content {
+  font-size: 22px;
+  line-height: 46px;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  /* 左邊欄位固定寬度，右邊欄位自適應 */
+
+}
+
+.label {
+  text-align: left;
+  /* 讓標籤文字靠右對齊 */
+}
+
+.input{
+  border-radius: 4px;
+  height: 32px;  
+ 
+}
+
+#lowercase, #uppercase, #numbers, #symbols{
+  justify-self: start;
+  /* 讓 checkbox 靠左對齊 */
+ 
 }
