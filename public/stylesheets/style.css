@@ -29,7 +29,7 @@ margin: 100px;
 background-color: aliceblue;
 }
 
-#reminderWord {   
+.reminderWord {   
   font-size: 14px;
   color: #888;
   margin-top: -15px;
@@ -60,14 +60,17 @@ background-color: aliceblue;
   /* 讓標籤文字靠右對齊 */
 }
 
-.input{
+#length, #exclude{
   border-radius: 4px;
   height: 32px;  
- 
+  width: 100%;
+  max-width: 400px;
+    /* 最大寬度 300px */
+    min-width: 150px;
+    /* 最小寬度 150px */
 }
 
-#lowercase, #uppercase, #numbers, #symbols{
-  justify-self: start;
-  /* 讓 checkbox 靠左對齊 */
- 
+.checkbox{
+  width: 20px;
+  height: 20px;
 }
