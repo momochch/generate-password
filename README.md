@@ -3,7 +3,7 @@
 ![success](./public/image/success.PNG)
 
 ## Introduction
-Enter the desired password length (default is 10)<br>
+Enter a password length between 4 and 16; otherwise, it defaults to 10<br>
 Select at least one requirement<br>
 Click the "Generate Password" button to generate a password based on the selected criteria
 
