@@ -18,10 +18,13 @@ function generatePassword() {
 
   // 隨機組合產生密碼
 
-  // 如果沒有輸入，就預設長度為10
-  const passwordLength = parseInt(length.value) || 10; 
+  // 如果沒有輸入或>4或<16，就預設長度為10
+  let passwordLength = parseInt(length.value); 
+  if (passwordLength <= 4 || passwordLength >=16){
+     passwordLength = 10;
+  }
   // 確認密碼長度
-  // console.log(passwordLength) 
+  console.log(passwordLength) 
   let password = '';
   for (let i = 0; i < passwordLength; i++) {
     const set = chars[Math.floor(Math.random() * chars.length)];
@@ -47,6 +50,6 @@ submitBtn.addEventListener('click', (event) => {
     message.textContent = `Your password is: ${password}`;
     message.style.color = 'green';       
     message.style.backgroundColor = '#8deea4';    
-    message.style.display = 'block';    
-  }
+    message.style.display = 'block';        
+  }  
 });

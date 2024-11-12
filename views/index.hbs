@@ -10,7 +10,7 @@
       <label class="label" for="length">Password Length</label>
       <div class="have-reminder-word">
         <input class="input" type="number" id="length" name="length" min="4" max="16" value="{{option.length}}"><br>
-        <div class="reminderWord">Length is available between 4~16
+        <div class="reminderWord">Length must be between 4~16; otherwise defaults to 10
         </div>
       </div>
       {{!-- Include Lowercase Characters --}}
@@ -43,7 +43,7 @@
         <input class="input" type="text" id="exclude" name="exclude" value="{{option.exclude}}"><br>
         <div class="reminderWord">These characters will not appear in the password</div>
       </div>
-      </div>
+    </div>
       
       {{!-- password --}}
       
